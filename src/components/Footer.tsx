@@ -65,7 +65,7 @@ const Footer = () => {
             <span>+234 (0)70 0000 0000</span>
           </h6>
         </div>
-        <div className="flex w-fit">
+        <div className="flex w-fit mt-6 md:mt-0">
           {footerData.map(({ title, links }, index) =>
             <div className="w-40 flex flex-col" key={index}>
               <h4 className="font-[500] mb-4">

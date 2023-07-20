@@ -6,7 +6,8 @@ const HeroSection = () => {
           {[3, 2, 1, -1, -2].map(item =>
             <div
               key={item}
-              className="w-[17%] h-[90%] bg-[url(/images/hero.jpg)] bg-center bg-fixed bg-cover bg-no-repeat relative"
+              className={`w-[30%] md:w-[17%] h-[90%] bg-[url(/images/hero.jpg)] bg-center bg-fixed bg-cover bg-no-repeat relative ${item <
+                1 && "hidden md:block"}`}
               style={{
                 top: `${item * 20}px`
               }}
@@ -15,7 +16,7 @@ const HeroSection = () => {
         </div>
         <div className="relative flex flex-col justify-between px-[8%] pb-[5%] pt-[10%] h-full ">
           <div className="flex">
-            <div className="md:w-6/12">
+            <div className="md:w-6/12 mt-[8vh] md:mt-0">
               <h1 className="font-bold text-3xl leading-10">
                 If you can dream it, <br />We can build it
               </h1>

@@ -1,13 +1,13 @@
 const PropertyFinder = () => {
   return (
     <section className="py-8 border-t border-b bg-[#00000011] px-8">
-      <div className="container flex justify-between items-center rounded-lg border shadow-sm border-primary py-3 px-10">
-        <div className="w-full flex items-center">
+      <div className="container flex flex-col md:flex-row justify-between items-center rounded-lg border shadow-sm border-primary py-3 px-10">
+        <div className="w-full flex flex-col md:flex-row items-center">
           {
             propertyData.map(({options,title},index)=>
             
             <>
-            <div className="w-[18%] " key={title}>
+            <div className="w-full md:w-[18%] " key={title}>
             <h6 className="font-bold">{title}</h6>
             <div className="rounded-md bg-[#00000011] px-4 py-2 w-full">
               <select name="" id="" className="bg-transparent w-full">
@@ -25,7 +25,7 @@ const PropertyFinder = () => {
           }
           
         </div>
-        <button className="px-4 py-2 bg-primary inline-flex items-center text-light rounded-lg hover:scale-110 min-w-max">
+        <button className="w-full md:w-fit mt-3 md:mt-0 px-4 py-2 bg-primary inline-flex items-center text-light rounded-lg hover:scale-110 min-w-max">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 me-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8" />
             <line x1="21" y1="21" x2="16.65" y2="16.65" />
@@ -39,7 +39,7 @@ const PropertyFinder = () => {
 
 export default PropertyFinder;
 
-const SpacerLine = () => <div className=" h-20 w-[1px] bg-primary mx-5 opacity-50" />;
+const SpacerLine = () => <div className=" h-[1px] w-10/12 my-2  md:h-20 md:w-[1px] bg-primary mx-5 hidden md:block opacity-50" />;
 
 const propertyData = [
   {

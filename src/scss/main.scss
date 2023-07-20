@@ -30,3 +30,10 @@ body,
     }
   }
 }
+
+@media screen and (min-width:768px) {
+
+  .clipped-img {
+    clip-path: polygon(0% 0%, 80% 0%, 100% 80%, 100% 100%, 0% 100%)
+  }
+}

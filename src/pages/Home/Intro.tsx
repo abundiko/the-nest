@@ -1,8 +1,8 @@
 const Intro = () => {
   return (
     <section className="py-10">
-      <div className="container mx-auto px-8 flex flex-wrap justify-around items-center">
-        <div className="w-full md:w-6/12">
+      <div className="container mx-auto px-8 flex flex-wrap-reverse justify-around items-center">
+        <div className="w-full md:w-6/12 text-center md:text-left">
           <h1 className="font-bold text-3xl leading-10">
             We're here to help you find your dream home
           </h1>
@@ -14,7 +14,7 @@ const Intro = () => {
             real estate dreams. Contact us today.
           </h2>
         </div>
-        <div className="w-11/12 md:w-5/12 p-2">
+        <div className="w-10/12 md:w-5/12 p-2">
           <img
             src="/images/hero.jpg"
             alt="hero image"

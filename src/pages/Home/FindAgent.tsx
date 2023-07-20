@@ -5,10 +5,7 @@ const FindAgent = () => {
         <img
           src="/images/hero.jpg"
           alt="an agent"
-          className="w-11/12 md:w-4/12 h-[80vh] object-cover"
-          style={{
-            clipPath: "polygon(0% 0%, 80% 0%, 100% 80%, 100% 100%, 0% 100%)"
-          }}
+          className="w-full md:w-4/12 h-[80vh] object-cover clipped-img"
         />
         <div className="w-11/12 md:w-8/12 p-4 px-[4vw]">
           <h1 className="font-bold text-3xl mb-5">Find An Agent</h1>
